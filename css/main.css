@@ -1,0 +1,75 @@
+html, body{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header,h1{
+    background-color: #5D665C;
+    padding: 5px;
+    margin: 0;
+    
+}
+
+.counter{
+    border: brown solid 2px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+h4{
+    display: none;
+}
+.board{
+    border: 1px solid black;
+    margin: auto;
+    margin-bottom: 10px;
+    cursor: not-allowed;
+}
+td{
+    text-align: center;
+    height: 40px;
+    width: 40px;
+}
+img {
+    height: 20px;
+    width: 20px;
+}
+.floor{
+    background-color: gray;
+}
+.wall{
+    background-color: brown;
+}
+.target{
+    background-color: orange;
+}
+button{
+    margin: 5px;
+    color: white;
+    background-color: black;
+    border: brown solid 3px;
+    border-radius: 3px;
+}
+
+.hidden{
+    display: none;
+}
+
+
+.modal{
+    color: black;
+    background-color: rgb(18, 100, 96);
+    display: none;
+    position: absolute;
+    border-radius: 1em;
+    top:10px;
+    right: 10px;
+    padding: 15px;
+    width: 300px;
+}
+
+button{
+    cursor: pointer;
+}

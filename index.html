@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sokoban</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onkeyup="handleKey(event)" onload="init()">
+    <header>
+        <h1>Sokoban</h1>
+    </header>
+    <div class="counter">
+        <h3 class="step-count">steps: <span>0</span></h3>
+        <h4>free steps: <span>0</span></h4>
+        <h3 class="score">score: <span>100</span></h3>
+    </div>
+
+    <button onclick="startGame()">start game!</button>
+    <table class="board"></table>
+
+    <section>
+        <button onclick="restart()">restart</button>
+        <button onclick="undo()">undo</button>
+        <br>
+        <button onclick="buildDefault()">default board </button>
+        <button onclick="buildCustom()">build your own</button>
+        <br>
+        <button class="hidden" onclick="setBlockTypeAs(WALL)">wall</button>
+        <button class="hidden"onclick="setBlockTypeAs(TARGET)">target</button>
+        <button class="hidden"onclick="setBlockTypeAs(BOX)">box</button>
+        <button class="hidden"onclick="setBlockTypeAs(GAMER)">player</button>
+    </section>
+
+    <div class="modal">
+        <button onclick="closeModal()">x</button>
+        <h3>you won</h3>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/box.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/game.js"></script>
+</body>
+
+</html>
